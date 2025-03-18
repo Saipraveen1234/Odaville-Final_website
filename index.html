@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Odaville - Limitless Views Crafted</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+<!-- Fullscreen Video Preloader
+<div class="preloader">
+    <div class="preloader-container">
+        Video Animation (Fullscreen) 
+        <video class="preloader-video" muted playsinline autoplay>
+            <source src="images/Pre-loader.mp4" type="video/mp4">
+             Fallback image if video doesn't load
+            <img src="images/Layer 2.png" alt="Odaville Logo">
+        </video>
+    </div>
+</div> -->
+
+<!-- Site Content Wrapper -->
+<div class="site-content">
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+    
+    <div class="hero">
+        <!-- Video Background -->
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+                <source src="images/Sample-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        
+        <header>
+            <div class="logo">
+                <img src="images/Layer 2.png" alt="Odaville Logo">
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="hero-content">
+            <h1 class="main-heading animate-text delay-1">We redefine architecture with <br> minimalist aesthetics and<br>precision engineering.</h1>
+            
+            <div class="supporting-text">
+                <div class="left-text animate-text delay-2">
+                    We craft high-performance windows, doors, and facade systems.
+                </div>
+                <div class="right-text animate-text delay-3">
+                    From luxury homes to commercial spaces, we transform the way you experience your space.
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <a href="#" class="cta-button animate-text delay-4">SCHEDULE A CALL</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<section class="about-section">
+    <!-- Background accent element -->
+    <div class="accent-shape"></div>
+    
+    <div class="about-container">
+        <div class="about-content">
+            <div class="about-left">
+                <div class="about-tagline animate-on-scroll">
+                    <div class="tagline-accent"></div>
+                    Crafting Excellence in Architectural Design
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-headline animate-on-scroll">
+                    <h2>
+                        At Odaville, we push the 
+                        <span class="line-break">boundaries of functionality and</span>
+                        <span class="line-break">aesthetics to create spaces that</span>
+                        <span class="line-break">inspire.</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="about-gallery">
+            <div class="gallery-row">
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/Slider-Image-1.jpg" alt="Modern architectural house with glass walls">
+                    <div class="image-caption">
+                        <span>Premium Residential Design</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/Slider-Image-2.jpg" alt="House with pool at night">
+                    <div class="image-caption">
+                        <span>Luxury Outdoor Integration</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/Slider-Image-3.jpg" alt="Multi-level house with pool">
+                    <div class="image-caption">
+                        <span>Contemporary Living Spaces</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Small scroll indicator -->
+            <div class="scroll-indicator animate-on-scroll">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Services Section HTML -->
+<section class="services-section">
+    <div class="services-container">
+        <div class="glass-panel animate-on-scroll">
+            <h2 class="services-title">Expertly Engineered,<br>Seamlessly Delivered.</h2>
+            <p class="services-subtitle">At Odaville, we turn ideas into elegant functional realities.</p>
+        </div>
+    </div>
+    <div class="services-bottom-cta animate-on-scroll">
+        <a href="#" class="services-cta-button">EXPLORE OUR SERVICES</a>
+    </div>
+</section>
+
+
+<!-- Products Section with Category Filtering -->
+<section class="products-section">
+    <div class="products-container">
+        <div class="products-header">
+            <div class="section-tagline animate-on-scroll">
+                <div class="tagline-accent"></div>
+                Explore Our Premium Products
+            </div>
+            <div class="section-headline animate-on-scroll">
+                <h2>
+                    High-performance solutions
+                    <span class="line-break">that elevate your architectural</span>
+                    <span class="line-break">vision.</span>
+                </h2>
+            </div>
+        </div>
+        
+        <!-- Products Swiper with loading state -->
+        <div class="swiper products-swiper animate-on-scroll">
+            <!-- Loading spinner -->
+            <div class="swiper-loader">
+                <div class="spinner"></div>
+            </div>
+            
+            <div class="swiper-wrapper">
+                <!-- Product slides will be dynamically generated by JavaScript -->
+            </div>
+            
+
+            
+        
+        <!-- Category Filters -->
+        <div class="product-categories animate-on-scroll">
+            <button class="category-button active" data-category="windows">Windows & Glass</button>
+            <button class="category-button" data-category="doors">Door Systems</button>
+            <button class="category-button" data-category="signature">Signature Series</button>
+            <button class="category-button" data-category="architectural">Architectural Elements</button>
+        </div>
+    </div>
+</section>
+
+
+
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="hamburger-menu.js"></script>
+    <script src="text-animations.js"></script>
+    <script src="preloader.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="products.js"></script>
+    
+    <!-- Viewport height fix for mobile -->
+    <script>
+      function setViewportHeight() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      
+      setViewportHeight();
+      window.addEventListener('resize', setViewportHeight);
+      window.addEventListener('orientationchange', setViewportHeight);
+    </script>
+</body>
+</html>
